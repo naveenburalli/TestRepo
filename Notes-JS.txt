@@ -1,0 +1,103 @@
+Document Object Model (DOM)---An interface that represent the structure of the webpage in a way that programming languages like JS can understand and manipulate.
+
+--SELECTING ELEMENTS--
+
+getElementById() --returns element object that represents an html element (Document object)
+
+getElementsByName() - return NodeList array
+
+getElementsByTagName() - returns live html collection of elements
+
+geeElementsByClassName() -based on class name of the HTML element (Document object/parent element object)
+
+
+--QUERY SELECTORS--
+
+querySelector() - Can be used to get the first CSS query selector.
+
+querySelectorAll() - Can be used to get all the CSS query selectors - return NodeList array
+
+
+--TRAVERSING ELEMENTS--
+
+parent-child
+siblings of elements
+
+
+--MANIPULATING ELEMENTS--
+
+createElement()
+
+appendChild() -appends an element to an existing parent element (menu > new list item)
+
+textContent - displays text content of the elements (even blocked elements on the display) -Only plain text
+
+innerText - displays only visible text on the page.
+
+innerHTML - get/Add HTML code 
+
+after() -
+
+append() -
+
+prepend() - 
+
+insertAdjacentHTML() - (postitionName, text/HTML)
+
+replaceChild() -
+
+cloneNode() -(true) - includes the inner elements also. By default it is 'false'.
+
+removeChild() - 
+
+insertBefore() - (newNode, oldNode)
+
+
+--ATTRIBUTES--
+
+attributes - gets all the attributes if HTML element
+
+getAttribute() - read the attribute value of the selected element.
+
+setAttribute() -
+
+hasAttribute() - returns True/False
+
+removeAttribute() 
+
+
+---MANIPULATING STYLE OF THE ELEMENTS----
+
+'style' property - in-line CSS
+
+style.cssText() - replaces the existing in-line CSS.
+
+getComputedStyle - (window object) - all CSS properties on the element.
+
+---------------------------
+
+className - property to read and add class names of the selected element.
+
+classList - array list of class names - (add, remove, replace, contains, toggle- adds if not existing/removes if already existing)
+
+--------------------------------------
+--JAVASCRIPT EVENTS--
+--------------------------------------
+
+Event Bubbling: Event starts at the most specific element and flows towards the least specific element (div container > body > html > DOCTYPE) 
+
+Event Capturing : Event starts at the least specific element and flows towards the most specific element (reverse of bubbling)
+
+Event handler : Code that runs during an event
+
+this/event : refers to the target element. (Javascript passes the event object with different properties)
+
+3 ways of handling events:
+
+1) addEventListener(event, function, useCapture),removeEventListner()
+2) Inline
+3) Accessing event properties.
+
+
+
+
